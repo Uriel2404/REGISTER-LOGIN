@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión / Registrarse</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 left active-section" id="loginSection" style="background-color: #2C90A6;">
+                <div class="form-container" style="background-color: #E8B880;">
+                    <img src="resized_image.png" alt="Header Image" class="header-image">
+                    <h2>INICIAR SESIÓN</h2>
+                    <form id="loginForm" class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <input type="email" id="loginEmail" class="form-control" placeholder="Correo Electrónico" required>
+                            <div class="invalid-feedback">
+                                Por favor ingresa un correo electrónico válido.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="loginPassword" class="form-control" placeholder="Contraseña" required>
+                            <div class="invalid-feedback">
+                                La contraseña es requerida.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-dark rounded-pill" style="background-color: #2C90A6;">Enviar</button>
+                    </form>
+                </div>
+                <div class="bottom-text">
+                    <p>No tienes cuenta? Regístrate pulsando el botón</p>
+                    <a href="#register" id="registerBtn" class="switch-btn btn btn-outline-success rounded-pill" style="background-color: #fff; color: #2C90A6;">Registrarse</a>
+                </div>
+            </div>
+            <div class="col-md-6 right blurred" id="registerSection" style="background-color: #E8B880; color: black;">
+                <div class="form-container" style="background-color: #2C90A6;">
+                    <img src="Captura.JPG" alt="Header Image" class="header-image">
+                    <h2>REGISTRARSE</h2>
+                    <form id="registerForm" class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <input type="email" id="registerEmail" class="form-control" placeholder="Correo Electrónico" required>
+                            <div class="invalid-feedback">
+                                Por favor ingresa un correo electrónico válido.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="registerPassword" class="form-control" placeholder="Contraseña" required>
+                            <div class="invalid-feedback">
+                                La contraseña es requerida.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="confirmPassword" class="form-control" placeholder="Confirmar Contraseña" required>
+                            <div class="invalid-feedback">
+                                Por favor confirma tu contraseña.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary rounded-pill" style="background-color: #E8B880;">Enviar</button>
+                    </form>
+                </div>
+                <div class="bottom-text">
+                    <p>Ya tienes cuenta? Inicia sesión pulsando el botón</p>
+                    <a href="#login" id="loginBtn" class="switch-btn btn btn-outline-danger rounded-pill" style="background-color: #fff; color: #E8B880;">Iniciar Sesión</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
